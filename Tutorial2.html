@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tutorial 2</title>
+    <link rel="icon" type="image/jpg" href="image/ym.jpeg">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">SharePoint</a><span class="divider"></span>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <button type="button" class='navbar-toggle' data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">toggle navigation></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span></button>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Search: </a></li>
+                <li>
+                    <div class="col-sm-12">
+                        <input id="searchinput" name="searchinput" type="search" class="form-control input-md">
+                    </div>
+                </li>
+                <li><i class="fa fa-question-circle-o" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron well">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#"></a></li>
+            <li>
+                <dl>
+                    <dt>Libraries</dt>
+                    <dd>Site Pages</dd>
+                    <dd>Shared Documents</dd>
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt>List</dt>
+                    <dd>Calendar</dd>
+                    <dd>Tasks</dd>
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt>Discussion</dt>
+                    <dd>Team Discussion</dd>
+                </dl>
+            </li>
+
+
+            <li>
+                <dl>
+                    <dt><i class="fa fa-recycle" aria-hidden="true"></i>Recycle Bin</dt>
+                    <dd></dd>
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt><i class="fa fa-file" aria-hidden="true"></i>All Site Content</dt>
+                    <dd></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h2>
+                    Welcome to Portal!
+                </h2>
+                <p>
+                    Add a new image, change this welcome text or add new lists to this page by clicking the edit button
+                    above. You can click on Shared Document to add files or on the calendar to create new team events.
+                    Use the links in the getting started section to share your site and customize its look.
+
+                    <img alt="ImagePreview" src="image/winsharepoint.GIF" class="pull-right"/>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    Bulk Alert Subscription Web Part
+                </h3>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tabbable" id="tabs-242561">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#panel-1" data-toggle="tab">Create New Alerts</a>
+                            </li>
+                            <li>
+                                <a href="#panel-2" data-toggle="tab">View / Edit Subscribed Alerts</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-1">
+
+                            </div>
+                            <div class="tab-pane" id="panel-2">
+
+                                <form class="form-horizontal">
+                                    <fieldset>
+
+                                        <!-- Form Name -->
+                                        <legend></legend>
+
+                                        <!-- Appended Input-->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="appendedtext">Site URL:</label>
+                                            <div class="col-md-5">
+                                                <div class="input-group">
+                                                    <input id="appendedtext" name="appendedtext" class="form-control"
+                                                           placeholder="http://domain.com/" type="text">
+                                                    <span class="input-group-addon">Edit</span>
+                                                </div>
+                                            </div>
+                                            <button type=button class="btn btn-warning"><span
+                                                    class="glyphicon glyphicon-warning-sign"></span> Get ALerts
+                                            </button>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+
+                                        <legend>View Alerts For:</legend>
+                                        <div class="form-group">
+
+                                            <div class="col-md-4">
+                                                <div class="radio">
+                                                    <label for="User">
+                                                        <input type="radio" name="User" id="User" value="1"
+                                                               checked="checked">
+                                                        This User
+
+                                                    </label>
+                                                </div>
+
+                                                <div class="radio">
+                                                    <label for="AllUser">
+                                                        <input type="radio" name="AllUser" id="AllUser" value="2">
+                                                        All User
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+                                                <input id="textinput" name="textinput" type="text"
+                                                       placeholder="Domain\User" class="form-control input-md">
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset>
+
+                                        <legend>Apply to All</legend>
+                                        <div class="form-group">
+
+                                            <div class="col-md-8">
+                                                <div class="checkbox">
+                                                    <label for="chkselectall">
+                                                        <input type="checkbox" name="chkselectall" id="chkselectall"
+                                                               value="1">
+                                                        Select All
+                                                    </label>
+
+                                                    <button type="button" class="btn btn-warning dropdown-toggle"
+                                                            data-toggle="dropdown">
+                                                        Immediately
+                                                        <span class="caret"></span>
+                                                    </button>
+
+
+                                                    <button type="button" class="btn btn-warning dropdown-toggle"
+                                                            data-toggle="dropdown">
+                                                        Allchanges
+                                                        <span class="caret"></span>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-warning dropdown-toggle"
+                                                            data-toggle="dropdown">
+                                                        Anything changes
+                                                        <span class="caret"></span>
+
+                                                    </button>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset>
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-2">
+                                                    <h4>Site URL</h4>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <h4>List/Library Name</h4>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <h4>Alert Title</h4>
+                                                </div>
+
+                                                <div class="col-md-1">
+                                                    <h4>Selected</h4>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <h4>Alert Frequency</h4>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <h4>Alert Type</h4>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <h4>Alert For</h4>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    http://domain.com/Project
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Alert for Project 1
+
+
+                                                </div>
+                                                <div class="col-md-1">
+                                                    Task List
+
+
+                                                </div>
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" name="checkboxes" id="checkboxes-1" value="1"
+                                                           checked="checked">
+
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Immediately
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            All Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Anything Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    http://domain.com/Sales/
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Sales Alert
+
+
+                                                </div>
+                                                <div class="col-md-1">
+                                                    Metrice
+
+
+                                                </div>
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" name="checkboxes" id="chk2" value="2">
+
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Weekly
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Edit Items
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Anything Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    http://domain.com/Corp
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Marketing Alert
+
+
+                                                </div>
+                                                <div class="col-md-1">
+                                                    Project Tasks
+
+
+                                                </div>
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" name="checkboxes" id="chk3" value="3">
+
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Immediately
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            All Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Anything Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    http://domain.com/Legal
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Legal Alert
+
+
+                                                </div>
+                                                <div class="col-md-1">
+                                                    Milestones
+
+
+                                                </div>
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" name="checkboxes" id="chk4" value="4"
+                                                           checked="checked">
+
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Weekly
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Delete Items
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Anything Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    http://domain.com/Support
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Alert for Support
+
+
+                                                </div>
+                                                <div class="col-md-1">
+                                                    Project Status
+
+
+                                                </div>
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" name="checkboxes" id="chk5" value="5">
+
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Daily
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            All Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="btn-group">
+
+                                                        <button class="btn btn-xs btn-warning">
+                                                            Anything Changes
+                                                        </button>
+                                                        <button data-toggle="dropdown"
+                                                                class="btn btn-xs btn-warning dropdown-toggle">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </fieldset>
+                                    <div class="row col-md-4 pull-right">
+
+
+                                        <button type="button" class="btn btn-xs btn-danger">
+                                            Delete Selected Alerts
+                                        </button>
+                                        <button type="button" class="btn btn-xs btn-info">
+                                            Update Selected Alerts
+                                        </button>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
