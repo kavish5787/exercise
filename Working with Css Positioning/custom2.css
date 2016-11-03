@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  display: block;
+  overflow: auto;
+  width: 800px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #00e0ff;
+  text-align: left;
+}
+
+.child_01 {
+  display: block;
+  width: 50%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  clear: none;
+  background-color: #00a3ff;
+}
+
+.child_02 {
+  position: static;
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  background-color: #ffa300;
+}
+
+.child_03 {
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  clear: none;
+  background-color: #ff5c00;
+}
